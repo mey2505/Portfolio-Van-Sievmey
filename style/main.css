@@ -1,117 +1,251 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: ; */
-}
+} 
+/* NAVBAR */
 .navbar{
-    /* background: rgba(0, 0, 0, 0.982); */
-    /* background:; */
-    background:#cb7736e2;
-
+    background:#5a0f14; /* Dark red */
     height: 50px;
     display: flex;
-    
+    align-items: center;
 }
+
 .navbar h2{
-    color: white;
-    margin-top: 12px;
+    color: #ffffff; /* White text */
     margin-left: 40px;
 }
 
 .single{
     margin-left: 200px;
-    margin-top:14px ;
     display: flex;
     gap: 30px;
 }
+
 .single a{
-    color: white;
+    color: #ffffff; /* White links */
     text-decoration: none;
+    font-weight: 500;
 }
+
 .single a:hover{
-    color: #ff6f00;
+    color: #ff6f00; /* Orange hover */
 }
-/* ##################main############### */
+
+/* INTRO SECTION */
 .intro{
-    background-color: black;
-    
-    height:545px;
-    /* margin-left: 100px; */
+    background-color: #000000; /* Black background */
+    height: 545px;
 }
+
 .intro1{
-    /* background:red; */
-    margin-bottom: 50px;
     margin-left: 100px;
+    margin-bottom: 50px;
 }
-/* .intro1 h2{
-    color: aliceblue;
-    margin-left: 150px;
-} */
+
 .develop{
-    color: aliceblue;
+    color: #ffffff; /* White text */
     display: flex;
-    /* margin-left: 150px; */
+    gap: 8px;
     margin-bottom: 10px;
 }
-.develop .mey{
-    color: #ff6f00;
-}
-.intro1 p{
-    /* margin-left: 150px; */
-    
-}
-.name{
-    display: flex;
-    /* margin-left: 150px; */
 
+.develop .mey{
+    color: #ff6f00; /* Orange highlight */
 }
+
 .name h1{
-    color: white;
+    color: #ffffff;
     font-size: 70px;
 }
-.name .mey{
-    color: #ff6f00;
-}
-.intro1 p{
-    color: aliceblue;
 
+.name .mey{
+    color: #ff6f00; /* Orange name */
 }
+
+.intro1 p{
+    color: #ffffff; /* White text */
+}
+
+/* Layout */
 .display{
     display: flex;
-    /* display: grid; */
     gap: 70px;
     align-items: center;
     justify-content: center;
 }
+
+/* Profile Image */
 .pic{
     width: 50%;
-    /* background: red; */
-
 }
+
 .image{
-    /* background:green; */
     width: 300px;
     height: 300px;
     border-radius: 100%;
     overflow: hidden;
     padding: 4px;
-    background: red;
-
+    background: #ff6f00; /* Orange ring */
 }
+
 .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 100%;
-    /* margin-left: 300px; */
-}
-button{
-    /* background: red; */
-    margin: 12px;
-    padding: 5px 13px;
-    border-radius: 10px;
-    border: none;
-    /* background: #ce5b6182; */
-    
 }
 
+/* BUTTON */
+button{
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #5a0f14; /* Dark red */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button{
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #5a0f14; /* Dark red */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: #ff6f00; /* Orange hover */
+    color: #000000; /* Black text when hovering */
+} 
+/* ===== SKILL PAGE ===== */
+:root {
+    /* New Palette Colors */
+    --black: #000000;
+    --white: #ffffff;
+    --orange-accent: #ff6f00;
+    --dark-red-primary: #5a0f14;
+
+    /* Applied Colors for the Layout */
+    --primary-color: var(--dark-red-primary); /* Used for main button, potential header background */
+    --light-bg-color: var(--white); /* Background color of the section */
+    --text-color-dark: var(--black); /* Main body text color */
+    --title-blue-part: var(--black); /* The "About" part of the title */
+    --title-green-part: var(--orange-accent); /* The "Me" part of the title */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* Using white for the main body background */
+    background-color: var(--light-bg-color); 
+    color: var(--text-color-dark);
+}
+
+/* --- About Section Layout (Flexbox) --- */
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* --- Typography Styling --- */
+.about-title {
+    font-size: 3.5em;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.title-blue {
+    /* Now using Black for the first word ("About") */
+    color: var(--title-blue-part); 
+}
+
+.title-green {
+    /* Now using Orange for the second word ("Me") */
+    color: var(--title-green-part);
+}
+
+.about-subtitle {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--text-color-dark); /* Using Black for paragraph text */
+}
+
+/* --- Button Styling --- */
+.read-more-btn {
+    display: inline-block;
+    /* Using Dark Red for the button background */
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    /* A slightly darker shade for hover effect */
+    background-color: #480c10; 
+}
+
+/* --- Image Styling --- */
+.about-image-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    /* Optional: Using Orange for the shadow/outline effect */
+    box-shadow: 0 0 0 15px rgba(255, 111, 0, 0.2); 
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Responsiveness (No color changes here) --- */
+/* @media (max-width: 850px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .about-image-container {
+        margin-top: 40px;
+        order: -1;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 2.5em;
+    }
+} */
