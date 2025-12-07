@@ -1,84 +1,97 @@
 html {
     scroll-behavior: smooth;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
-} 
+    font-family: Arial, sans-serif;
+    
+}
+
 /* NAVBAR */
 
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 9999;
-} 
-.navbar{
-    background:#5a0f14; 
+}
+
+.navbar {
+    background: #5a0f14;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0 60px  ;
+    padding: 0 60px;
 }
 
-.navbar h2{
-    color: #ffffff; /* White text */
+.navbar h2 {
+    color: #ffffff;
+    /* White text */
     margin-left: 40px;
 }
 
-.single{
+.single {
     margin-left: 200px;
     display: flex;
     gap: 30px;
 }
 
-.single a{
-    color: #ffffff; /* White links */
+.single a {
+    color: #ffffff;
+    /* White links */
     text-decoration: none;
     font-weight: 500;
 }
 
-.single a:hover{
-    color: #ff6f00; /* Orange hover */
+.single a:hover {
+    color: #ff6f00;
+    /* Orange hover */
 }
 
 /* INTRO SECTION */
-.intro{
-    background-color:black; /* Black background */
-    height: 545px;
+.intro {
+    background-color: black;
+    /* Black background */
+    height: 600px;
 }
 
-.intro1{
+.intro1 {
     margin-left: 100px;
     margin-bottom: 50px;
 }
 
-.develop{
-    color: #ffffff; /* White text */
+.develop {
+    color: #ffffff;
+    /* White text */
     display: flex;
     gap: 8px;
     margin-bottom: 10px;
 }
 
-.develop .mey{
-    color: #ff6f00; /* Orange highlight */
+.develop .mey {
+    color: #ff6f00;
+    /* Orange highlight */
 }
 
-.name h1{
+.name h1 {
     color: #ffffff;
     font-size: 70px;
 }
 
-.name .mey{
-    color: #ff6f00; /* Orange name */
+.name .mey {
+    color: #ff6f00;
+    /* Orange name */
 }
 
-.intro1 p{
-    color: #ffffff; /* White text */
+.intro1 p {
+    color: #ffffff;
+    /* White text */
 }
 
 /* Layout */
-.display{
+.display {
     display: flex;
     gap: 70px;
     align-items: center;
@@ -86,20 +99,21 @@ header{
 }
 
 /* Profile Image */
-.pic{
+.pic {
     width: 50%;
 }
 
-.image{
+.image {
     width: 300px;
     height: 300px;
     border-radius: 100%;
     overflow: hidden;
     padding: 4px;
-    background: #ff6f00; /* Orange ring */
+    background: #ff6f00;
+    /* Orange ring */
 }
 
-.image img{
+.image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -107,33 +121,40 @@ header{
 }
 
 /* BUTTON */
-button{
+button {
     padding: 8px 18px;
     border-radius: 10px;
     border: none;
-    background: #5a0f14; /* Dark red */
-    color: #ffffff; /* White text */
+    background: #5a0f14;
+    /* Dark red */
+    color: #ffffff;
+    /* White text */
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
 }
 
-button{
+button {
     padding: 8px 18px;
     border-radius: 10px;
     border: none;
-    background: #5a0f14; /* Dark red */
-    color: #ffffff; /* White text */
+    background: #5a0f14;
+    /* Dark red */
+    color: #ffffff;
+    /* White text */
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     margin-top: 20px;
 }
 
-button:hover{
-    background: #ff6f00; /* Orange hover */
-    color: #000000; /* Black text when hovering */
-} 
+button:hover {
+    background: #ff6f00;
+    /* Orange hover */
+    color: #000000;
+    /* Black text when hovering */
+}
+
 /* ===== SKILL PAGE ===== */
 /* --- Variables & General Styling --- */
 :root {
@@ -144,19 +165,24 @@ button:hover{
     --dark-red-primary: #5a0f14;
 
     /* Applied Colors for the Layout */
-    --primary-color: var(--dark-red-primary); /* Used for main button, potential header background */
-    --light-bg-color: var(--white); /* Background color of the section */
-    --text-color-dark: var(--black); /* Main body text color */
-    --title-blue-part: var(--black); /* The "About" part of the title */
-    --title-green-part: var(--orange-accent); /* The "Me" part of the title */
+    --primary-color: var(--dark-red-primary);
+    /* Used for main button, potential header background */
+    --light-bg-color: var(--white);
+    /* Background color of the section */
+    --text-color-dark: var(--black);
+    /* Main body text color */
+    --title-blue-part: var(--black);
+    /* The "About" part of the title */
+    --title-green-part: var(--orange-accent);
+    /* The "Me" part of the title */
 }
 
 body {
-    
+
     margin: 0;
     font-family: Arial, sans-serif;
     /* Using white for the main body background */
-    background-color: var(--light-bg-color); 
+    background-color: var(--light-bg-color);
     color: var(--text-color-dark);
 }
 
@@ -189,7 +215,7 @@ body {
 
 .title-blue {
     /* Now using Black for the first word ("About") */
-    color: var(--title-blue-part); 
+    color: var(--title-blue-part);
     color: #ffffff;
 }
 
@@ -207,7 +233,7 @@ body {
 }
 
 .about-text {
-    
+
     line-height: 1.6;
     margin-bottom: 30px;
     /* color: var(--text-color-dark); Using Black for paragraph text */
@@ -229,7 +255,7 @@ body {
 
 .read-more-btn:hover {
     /* A slightly darker shade for hover effect */
-    background-color: #480c10; 
+    background-color: #480c10;
 }
 
 /* --- Image Styling --- */
@@ -240,7 +266,7 @@ body {
     overflow: hidden;
     position: relative;
     /* Optional: Using Orange for the shadow/outline effect */
-    box-shadow: 0 0 0 15px rgba(255, 111, 0, 0.2); 
+    box-shadow: 0 0 0 15px rgba(255, 111, 0, 0.2);
 }
 
 .profile-img {
@@ -281,9 +307,12 @@ body {
     --dark-red-primary: #5a0f14;
 
     /* Applied Colors for the Layout */
-    --main-bg: var(--white); /* White background for the whole page */
-    --card-bg-light: #fff3e0; /* A very light tint of orange for the cards (to look like the image) */
-    --accent-color: var(--dark-red-primary); /* Dark Red for buttons, icons, and title accent */
+    --main-bg: var(--white);
+    /* White background for the whole page */
+    --card-bg-light: #fff3e0;
+    /* A very light tint of orange for the cards (to look like the image) */
+    --accent-color: var(--dark-red-primary);
+    /* Dark Red for buttons, icons, and title accent */
     --dark-text: var(--black);
 }
 
@@ -298,19 +327,19 @@ body {
     font-size: 2.5em;
     margin-bottom: 50px;
     font-weight: 700;
-    color:var(--card-bg-light);
+    color: var(--card-bg-light);
 }
 
 .title-accent {
     /* The accent word ("Services") is now Dark Red */
-    color:var(--orange-accent);
+    color: var(--orange-accent);
 }
 
 /* --- Service Cards Layout (CSS Grid) --- */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -318,9 +347,9 @@ body {
 /* --- Individual Card Styling --- */
 .service-card {
     /* Card background is a light off-white/orange */
-    background-color: var(--card-bg-light); 
+    background-color: var(--card-bg-light);
     /* Adding a border with Orange accent to define the cards */
-    border: 1px solid rgba(147, 74, 18, 0.2); 
+    border: 1px solid rgba(147, 74, 18, 0.2);
     padding: 40px 30px;
     border-radius: 10px;
     text-align: center;
@@ -337,15 +366,16 @@ body {
 .service-icon {
     font-size: 1em;
     /* Icons are Dark Red */
-    color: var(--accent-color); 
+    color: var(--accent-color);
     margin-bottom: 20px;
-    display: inline-block; 
+    display: inline-block;
     padding: 15px;
     border-radius: 50%;
     /* Light background for the icon circle, using a transparent Dark Red */
-    background-color: rgba(90, 15, 20, 0.1); 
+    background-color: rgba(90, 15, 20, 0.1);
 }
-.service-icon img{
+
+.service-icon img {
     width: 100px;
     /* background: #000; */
 }
@@ -370,7 +400,7 @@ body {
 .read-more-btn {
     display: inline-block;
     /* Button background is Dark Red */
-    background-color: var(--accent-color); 
+    background-color: var(--accent-color);
     color: var(--white);
     padding: 10px 20px;
     text-decoration: none;
@@ -381,7 +411,7 @@ body {
 
 .read-more-btn:hover {
     /* Darken the Dark Red on hover */
-    background-color: #480c10; 
+    background-color: #480c10;
 }
 
 /* --- Variables (New Palette) --- */
@@ -392,18 +422,22 @@ body {
     --orange-accent: #ff6f00;
     --dark-red-primary: #5a0f14;
 
-    /* Applied Colors for the Contact Form */
-    --main-bg: var(--white); /* Background of the entire section */
-    --accent-color: var(--dark-red-primary); /* For the button and title accent */
-    --input-border-color: var(--dark-red-primary); /* Border around inputs */
+    /* Applied Colors for the Contact Form */contact-section
+    --main-bg: var(--white);
+    /* Background of the entire section */
+    --accent-color: var(--dark-red-primary);
+    /* For the button and title accent */
+    --input-border-color: var(--dark-red-primary);
+    /* Border around inputs */
     --text-color-dark: var(--black);
-    --placeholder-color: #666; /* Slightly lighter black for placeholders */
+    --placeholder-color: #666;
+    /* Slightly lighter black for placeholders */
 }
 
 /* --- General Section Styling --- */
 .contact-section {
     padding: 80px 5%;
-    background-color: #121212;
+    background-color:black;
     text-align: center;
 }
 
@@ -425,16 +459,19 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between rows and textarea/button */
+    gap: 20px;
+    /* Space between rows and textarea/button */
 }
 
 .form-row {
     display: flex;
-    gap: 20px; /* Space between input fields in a row */
+    gap: 20px;
+    /* Space between input fields in a row */
 }
 
 .form-row input {
-    flex: 1; /* Makes inputs in a row take equal space */
+    flex: 1;
+    /* Makes inputs in a row take equal space */
 }
 
 /* --- Input and Textarea Styling --- */
@@ -442,7 +479,8 @@ body {
 .contact-form textarea {
     width: 100%;
     padding: 15px;
-    border: 2px solid var(--input-border-color); /* Dark Red border */
+    border: 2px solid var(--input-border-color);
+    /* Dark Red border */
     border-radius: 8px;
     font-size: 1em;
     font-family: Arial, sans-serif;
@@ -459,23 +497,31 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: var(--orange-accent); /* Orange border on focus */
-    box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.2); /* Light orange glow */
+    border-color: var(--orange-accent);
+    /* Orange border on focus */
+    box-shadow: 0 0 0 3px rgba(255, 111, 0, 0.2);
+    /* Light orange glow */
 }
 
 /* Ensure textarea doesn't overflow */
 .contact-form textarea {
-    resize: vertical; /* Allow vertical resizing only */
-    min-height: 120px; /* Minimum height */
+    resize: vertical;
+    /* Allow vertical resizing only */
+    min-height: 120px;
+    /* Minimum height */
 }
 
 
 /* --- Button Styling --- */
 .send-message-btn {
-    display: block; /* Make button full width of its container */
-    width: fit-content; /* Adjust width to content */
-    margin: 0 auto; /* Center the button */
-    background-color: var(--accent-color); /* Dark Red button */
+    display: block;
+    /* Make button full width of its container */
+    width: fit-content;
+    /* Adjust width to content */
+    margin: 0 auto;
+    /* Center the button */
+    background-color: var(--accent-color);
+    /* Dark Red button */
     color: var(--white);
     padding: 15px 40px;
     border: none;
@@ -487,16 +533,18 @@ body {
 }
 
 .send-message-btn:hover {
-    background-color: #480c10; /* Darker red on hover */
+    background-color: #480c10;
+    /* Darker red on hover */
     transform: translateY(-2px);
-    color:#ff6f00 ;
+    color: #ff6f00;
 }
 
 /* --- Responsiveness --- */
-.your{
+.your {
     width: 96%;
-  
-} 
+
+}
+
 /* ################foter################# */
 /* --- Footer Colors from Palette --- */
 :root {
@@ -508,16 +556,19 @@ body {
 
 footer {
     /* Main footer background is Black */
-    background-color: var(--black); 
+    /* background-color: var(--black); */
+
     color: var(--white);
     padding: 40px 0 10px 0;
     font-family: Arial, sans-serif;
     text-align: center;
+     background:#121212;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
+    /* background:#121212; */
 }
 
 /* --- 1. Social Media Links --- */
@@ -535,7 +586,7 @@ footer {
     width: 45px;
     height: 45px;
     /* Icons are White */
-    color: var(--white); 
+    color: var(--white);
     background-color: transparent;
     border: 1px solid var(--white);
     border-radius: 50%;
@@ -546,7 +597,7 @@ footer {
 
 .social-icon:hover {
     /* Dark Red background on hover */
-    background-color: var(--dark-red-primary); 
+    background-color: var(--dark-red-primary);
     border-color: var(--dark-red-primary);
 }
 
@@ -562,20 +613,22 @@ footer {
     font-size: 1em;
     font-weight: 400;
     /* Underline on hover with Orange */
-    border-bottom: 2px solid transparent; 
+    border-bottom: 2px solid transparent;
     padding-bottom: 5px;
     transition: border-bottom-color 0.3s, color 0.3s;
 }
 
 .footer-nav a:hover {
-    color: var(--orange-accent); /* Orange text on hover */
-    border-bottom-color: var(--orange-accent); /* Orange underline on hover */
+    color: var(--orange-accent);
+    /* Orange text on hover */
+    border-bottom-color: var(--orange-accent);
+    /* Orange underline on hover */
 }
 
 /* --- 3. Copyright Text --- */
 .copyright {
     /* Separating the copyright text with a subtle line */
-    border-top: 1px solid #222; 
+    border-top: 1px solid #222;
     padding-top: 20px;
 }
 
@@ -586,10 +639,78 @@ footer {
 }
 
 /* --- Responsiveness --- */
-.new{
+.new {
     /* margin-right: 20px; */
     /* background: wheat; */
     padding-right: 200px;
     margin-top: 20px;
     margin-right: 120px;
+}
+/* ##########################project###################### */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 42px;
+  font-size: 32px;
+  color: #ff6f00;
+}
+
+.project-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  margin: 0;
+}
+
+.card p {
+  padding: 0 15px;
+  color: #555;
+}
+
+.view-btn {
+  display: block;
+  width: 90%;
+  margin: 15px auto 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #0056b3;
+}
+.pro{
+    /* background: #000; */
+    height: 500px;
+     background-color: #121212;
 }
