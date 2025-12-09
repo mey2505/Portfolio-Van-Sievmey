@@ -6,7 +6,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    
+
 }
 
 /* NAVBAR */
@@ -101,6 +101,7 @@ header {
 /* Profile Image */
 .pic {
     width: 50%;
+
 }
 
 .image {
@@ -422,8 +423,8 @@ body {
     --orange-accent: #ff6f00;
     --dark-red-primary: #5a0f14;
 
-    /* Applied Colors for the Contact Form */contact-section
-    --main-bg: var(--white);
+    /* Applied Colors for the Contact Form */
+    contact-section --main-bg: var(--white);
     /* Background of the entire section */
     --accent-color: var(--dark-red-primary);
     /* For the button and title accent */
@@ -431,13 +432,13 @@ body {
     /* Border around inputs */
     --text-color-dark: var(--black);
     --placeholder-color: #666;
-    /* Slightly lighter black for placeholders */
+    /* Slightly lighter black for placeholders  */
 }
 
 /* --- General Section Styling --- */
 .contact-section {
     padding: 80px 5%;
-    background-color:black;
+    background-color: black;
     text-align: center;
 }
 
@@ -562,7 +563,7 @@ footer {
     padding: 40px 0 10px 0;
     font-family: Arial, sans-serif;
     text-align: center;
-     background:#121212;
+    background: #121212;
 }
 
 .footer-container {
@@ -646,71 +647,82 @@ footer {
     margin-top: 20px;
     margin-right: 120px;
 }
+
 /* ##########################project###################### */
 .title {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 42px;
-  font-size: 32px;
-  color: #ff6f00;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 42px;
+    font-size: 32px;
+    color: #ff6f00;
 }
 
 .project-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    /* background:white; */
+    
+    
 }
 
 .card {
-  width: 300px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  overflow: hidden;
-  padding-bottom: 20px;
-  transition: 0.3s;
+    width: 400px;
+    height: 400px;
+    background:#fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 20px;
+    transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+     width: 100%;
+    /* width:px ; */
+    height: 250px;
+    object-fit: cover;
+    /* padding-left: 50px; */
 }
 
+
 .card h3 {
-  padding: 15px;
-  margin: 0;
+    padding: 15px;
+    margin: 0;
 }
 
 .card p {
-  padding: 0 15px;
-  color: #555;
+    padding: 0 15px;
+    color: #555;
 }
 
 .view-btn {
-  display: block;
-  width: 90%;
-  margin: 15px auto 0;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #007bff;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+    display: block;
+    width: 90%;
+    margin: 15px auto 0;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    /* background: #007bff; */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .view-btn:hover {
-  background: #0056b3;
+    background: #ff6f00;
 }
-.pro{
+
+.pro {
     /* background: #000; */
-    height: 500px;
-     background-color: #121212;
+    height: 600px;
+    background-color: #121212;
 }
